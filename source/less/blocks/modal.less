@@ -1,0 +1,132 @@
+.modal {
+  position: relative;
+
+  padding: 15px;
+  max-width: 450px;
+
+  background-color: #FFFFFF;
+  border-radius: 4px;
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  span,
+  p {
+    width: 100%;
+    margin-bottom: 26px;
+  }
+
+  input {
+    width: 100%;
+    padding: 12px 24px;
+
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.0025em;
+    color: #282828;
+
+    background-color: #F1F5FB;
+    border: none;
+    border-radius: 36px;
+    outline: none;
+
+    &:focus {
+      border-color: #4C77B1;
+    }
+
+    &::-webkit-input-placeholder { color: #BDBDBD; }
+    &:-ms-input-placeholder { color: #BDBDBD; }
+    &::-ms-input-placeholder { color: #BDBDBD; }
+    &::placeholder { color: #BDBDBD; }
+  }
+
+  input[type=submit] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.0125em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    border: none;
+    background-color: #4C77B1;
+    border-radius: 36px;
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+
+  &--search {
+    width: 320px;
+
+    input {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.modal__offer {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.0225em;
+  color: #282828;
+}
+
+.modal__close {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #FFFFFF;
+
+  background-color: #4C77B1;
+  border-radius: 50%;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 0 2px rgba(0, 0, 0, 0.06), 0 4px 8px rgba(0, 0, 0, 0.04);
+
+  cursor: pointer;
+  transition: all 0.1s ease;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+@media (max-width: 600px) {
+  .modal__offer {
+    margin-bottom: 30px;
+
+    font-size: 16px;
+    line-height: 25px;
+  }
+}

@@ -1,0 +1,48 @@
+body {
+  position: relative;
+  min-width: 320px;
+  margin: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.content-box-component {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.1s ease;
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+button {
+  transition: all 0.1s ease;
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input[type='submit'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

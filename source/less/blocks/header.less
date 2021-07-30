@@ -1,0 +1,148 @@
+.header {
+  padding-top: 18px;
+  padding-bottom: 17px;
+
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 0 2px rgba(0, 0, 0, 0.06), 0 4px 8px rgba(0, 0, 0, 0.04);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.header__nav {
+  width: 100%;
+  display: flex;
+}
+
+.header__logo-container {
+  width: 207px;
+  height: 53px;
+  margin-right: 81px;
+}
+
+a.header__logo-container {
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}
+
+.header__logo-pic {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+.header__search {
+  margin-right: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+
+  background-color: transparent;
+  border: 1px solid #282828;
+  border-radius: 50%;
+  fill: #282828;
+  cursor: pointer;
+  transition: all 0.1s ease;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    border-color: #4C77B1;
+    background-color: #4C77B1;
+    fill: #ffffff;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.header__search-icon {
+  transition: all 0.1s ease;
+}
+
+.header__tel {
+  display: block;
+  margin-bottom: 3px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.0025em;
+  text-transform: uppercase;
+  color: #282828;
+
+  &:hover,
+  &:focus {
+    color: #4C77B1;
+  }
+}
+
+.header__contacts-label {
+  margin: 0;
+
+  font-size: 10px;
+  line-height: 12px;
+  text-align: right;
+  color: #282828;
+}
+
+.header__burger {
+  display: none;
+}
+
+@media (max-width: 1158px) {
+  .header {
+    padding-top: 8px;
+    padding-bottom: 7px;
+  }
+
+  .header__container {
+    flex-wrap: wrap;
+  }
+
+  .header__logo-container {
+    margin-right: 0;
+  }
+
+  .header__contacts {
+    margin: 0 auto;
+  }
+
+  .header__search,
+  .header__nav-container {
+    display: none;
+  }
+
+  .header__nav-container {
+    order: 10;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .header__burger {
+    display: block;
+    flex-shrink: 0;
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__contacts {
+    display: none;
+  }
+}

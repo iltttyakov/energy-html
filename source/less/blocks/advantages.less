@@ -1,0 +1,255 @@
+.advantages {
+  margin-bottom: 68px;
+
+  &--fill {
+    padding-top: 88px;
+    padding-bottom: 88px;
+
+    background-color: #F3F6F9;
+  }
+}
+
+.advantages__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.advantages__title {
+  margin-bottom: 40px;
+  max-width: 820px;
+}
+
+.advantages__list {
+  margin: 0;
+  margin-bottom: 61px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  list-style: none;
+
+  &--with-form {
+    margin-bottom: 20px;
+  }
+}
+
+.advantages__link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.advantages__pic {
+  flex-shrink: 0;
+  height: 100%;
+  width: 121px;
+  margin-right: 24px;
+
+  object-fit: cover;
+}
+
+.advantages__desc {
+  margin: 0;
+  padding-top: 19px;
+  padding-bottom: 10px;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: #282828;
+
+  transition: all 0.1s ease;
+
+  &--bold {
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
+
+.advantages__offer {
+  margin: 0 auto;
+  margin-bottom: 32px;
+  max-width: 780px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.0225em;
+  color: #282828;
+}
+
+.advantages__item {
+  display: flex;
+  width: 552px;
+  margin-bottom: 20px;
+  padding-right: 32px;
+  padding-bottom: 3px;
+
+  background: #FFFFFF;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 0 2px rgba(0, 0, 0, 0.06), 0 4px 8px rgba(0, 0, 0, 0.04);
+  border-radius: 2px;
+
+  &--also {
+    min-height: 128px;
+  }
+
+  &--with-link {
+    position: relative;
+
+    transition: all 0.1s ease;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 2px 6px rgba(0, 0, 0, 0.04), 0 16px 24px rgba(0, 0, 0, 0.06);
+
+      .advantages__desc {
+        color: #4C77B1;
+      }
+    }
+
+    &:active {
+      opacity: 0.5;
+    }
+  }
+}
+
+.advantages__bottom {
+  margin-bottom: 84px;
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  input {
+    width: 264px;
+    height: 48px;
+    margin-right: 24px;
+    padding: 12px 24px;
+
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    color: #282828;
+
+    background-color: #F1F5FB;
+    border: none;
+    border-radius: 36px;
+    outline: none;
+
+    &::-webkit-input-placeholder { color: #A0A0A0; }
+    &:-ms-input-placeholder { color: #A0A0A0; }
+    &::-ms-input-placeholder { color: #A0A0A0; }
+    &::placeholder { color: #A0A0A0; }
+  }
+
+  input[type=submit] {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.0125em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    border: none;
+    background-color: #4C77B1;
+    border-radius: 36px;
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+}
+
+@media (max-width: 1158px) {
+  .advantages__item {
+    width: 48%;
+  }
+}
+
+@media (max-width: 940px) {
+  .advantages__item {
+    width: 100%;
+  }
+
+  .advantages__bottom {
+    form {
+      flex-direction: column;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    input {
+      margin: 0;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .advantages {
+    margin-bottom: 38px;
+
+    &--fill {
+      padding-top: 44px;
+      padding-bottom: 44px;
+    }
+  }
+
+  .advantages__list {
+    margin-bottom: 20px;
+  }
+
+  .advantages__bottom {
+    margin: 0;
+  }
+
+  .advantages__offer {
+    font-size: 16px;
+    line-height: 24px;
+
+    &--br {
+      display: none;
+    }
+  }
+
+  .advantages__item {
+    flex-direction: column;
+    padding: 0;
+    padding-bottom: 18px;
+  }
+
+  .advantages__pic {
+    height: 134px;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 13px;
+  }
+
+  .advantages__desc {
+    padding: 0 15px 0 15px;
+
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

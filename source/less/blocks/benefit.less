@@ -1,0 +1,150 @@
+.benefit {
+  margin-bottom: 84px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefit__subtitle {
+  margin-bottom: 40px;
+}
+
+.benefit__list {
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  list-style: none;
+}
+
+.benefit__item {
+  display: flex;
+  width: 552px;
+  margin-bottom: 24px;
+  padding: 29px 32px 21px 32px;
+
+  background: #FFFFFF;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.04), 0 0 2px rgba(0, 0, 0, 0.06), 0 4px 8px rgba(0, 0, 0, 0.04);
+  border-radius: 2px;
+}
+
+.benefit__icon-container {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  margin-right: 32px;
+  margin-top: 7px;
+}
+
+.benefit__icon {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+}
+
+.benefit__name {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.benefit__desc {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: #282828;
+}
+
+.benefit__offer {
+  margin: 0 auto;
+  max-width: 552px;
+  margin-bottom: 24px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.0225em;
+  color: #282828;
+}
+
+.benefit__button {
+  margin-bottom: 13px;
+}
+
+.benefit__calculator {
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  color: #0F4C81;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 1158px) {
+  .benefit__item {
+    width: 48%;
+  }
+}
+
+@media (max-width: 940px) {
+  .benefit__item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .benefit {
+    margin-bottom: 54px;
+  }
+
+  .benefit__list {
+    margin-bottom: 13px;
+  }
+
+  .benefit__item {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .benefit__icon-container {
+    width: 60px;
+    height: 60px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  .benefit__name {
+    text-align: center;
+  }
+
+  .benefit__desc {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+  }
+
+  .benefit__offer {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .benefit__button {
+    width: 100%;
+  }
+}
